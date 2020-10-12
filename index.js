@@ -1,9 +1,10 @@
- let div = document.createElement('div')
+
+let div = document.createElement('div')
 document.body.appendChild(div)
 div.setAttribute('id', 'bet-size')
 let bet = document.querySelector('#bet-size')
 
-
+// DEN FÖRSTA
 let element = document.createElement('input')
 document.body.appendChild(element)
 element.setAttribute('type', 'button')
@@ -11,6 +12,7 @@ element.id = 'increase'
 let increase = document.querySelector('#increase')
 element.value = 'Increase'
 
+//DEN ANDRA
 let secElement = document.createElement('input')
 document.body.appendChild(secElement)
 secElement.setAttribute('type', 'button')
@@ -26,8 +28,8 @@ increase.addEventListener('click', updateIncrease)
 function updateIncrease() {
    
     bet.textContent = Number(bet.textContent) + 1
-   
-    decrease.removeAttribute('disabled')
+   secElement.disabled = false
+    //decrease.removeAttribute('disabled')
    
 }
  
@@ -60,8 +62,10 @@ controlKeys()
 function updateDecrease() {
    
     bet.textContent = Number(bet.textContent) - 1 
-     if (Number(bet.textContent) === 1) {
-         decrease.setAttribute('disabled', 'disabled')
+     if (Number(bet.textContent) <= 1) {
+         //decrease.setAttribute('disabled', 'disabled')
+         secElement.disabled = true
+
 } 
     }
    
