@@ -9,14 +9,14 @@ document.body.appendChild(element)
 element.setAttribute('type', 'button')
 element.id = 'increase'
 let increase = document.querySelector('#increase')
-element.value = 'Increase btn'
+element.value = 'Increase'
 
 let secElement = document.createElement('input')
 document.body.appendChild(secElement)
 secElement.setAttribute('type', 'button')
 secElement.id = 'decrease'
 let decrease = document.querySelector('#decrease')
-secElement.value = 'Decrease btn'
+secElement.value = 'Decrease'
 
 bet.textContent = 1
  
