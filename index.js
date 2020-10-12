@@ -54,9 +54,6 @@ function controlKeys() {
 }
 controlKeys()
 
-    if (Number(bet.textContent) === 1) {
-         decrease.setAttribute('disabled', 'disabled')
-}
 
 function updateDecrease() {
    
